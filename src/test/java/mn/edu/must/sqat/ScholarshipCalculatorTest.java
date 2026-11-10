@@ -26,11 +26,11 @@ public class ScholarshipCalculatorTest {
         assertEquals("C", calc.letterGrade(79.99));
     }
 
-//    @Test
-//    void testLetterGrade_D() {
-//        assertEquals("D", calc.letterGrade(60));
-//        assertEquals("D", calc.letterGrade(69.99));
-//    }
+    @Test
+    void testLetterGrade_D() {
+        assertEquals("D", calc.letterGrade(60));
+        assertEquals("D", calc.letterGrade(69.99));
+    }
 
     @Test
     void testLetterGrade_F() {
