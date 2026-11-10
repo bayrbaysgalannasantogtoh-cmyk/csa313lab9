@@ -1,11 +1,12 @@
 package mn.edu.must.sqat;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ScholarshipCalculatorTest {
 
     ScholarshipCalculator calc = new ScholarshipCalculator();
-
+    
     @Test
     void testLetterGrade_A() {
         assertEquals("A", calc.letterGrade(90));
@@ -25,11 +26,11 @@ public class ScholarshipCalculatorTest {
         assertEquals("C", calc.letterGrade(79.99));
     }
 
-    //@Test
-    //void testLetterGrade_D() {
-    //    assertEquals("D", calc.letterGrade(60));
-    //    assertEquals("D", calc.letterGrade(69.99));
-    //}
+//    @Test
+//    void testLetterGrade_D() {
+//        assertEquals("D", calc.letterGrade(60));
+//        assertEquals("D", calc.letterGrade(69.99));
+//    }
 
     @Test
     void testLetterGrade_F() {
@@ -39,11 +40,11 @@ public class ScholarshipCalculatorTest {
 
     @Test
     void testLetterGrade_Exception() {
-     
+
         assertThrows(IllegalArgumentException.class, () -> calc.letterGrade(-0.01));
         assertThrows(IllegalArgumentException.class, () -> calc.letterGrade(100.01));
     }
-    
+
     @Test
     void testGpa_Loop0_Null() {
         assertThrows(IllegalArgumentException.class, () -> calc.gpa(null));
@@ -56,13 +57,16 @@ public class ScholarshipCalculatorTest {
 
     @Test
     void testGpa_Loop1() {
+
         assertEquals(4.0, calc.gpa(new double[]{95})); 
     }
 
     @Test
     void testGpa_Loop2Plus() {
+
         assertEquals(2.0, calc.gpa(new double[]{95, 85, 75, 65, 50}));
     }
+
 
     @Test
     void testScholarship_Exception_GpaNegative() {
@@ -106,6 +110,7 @@ public class ScholarshipCalculatorTest {
 
     @Test
     void testScholarship_70Percent_CreditFail() {
+
         assertEquals(50, calc.scholarship(3.4, 11, false));
     }
 
@@ -116,6 +121,7 @@ public class ScholarshipCalculatorTest {
 
     @Test
     void testScholarship_0Percent() {
+
         assertEquals(0, calc.scholarship(2.9, 15, false));
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.785" tests="19" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.474" tests="19" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -11,7 +11,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/bayarbayasgalan/csa313lab9/target/surefire/surefirebooter-20261110182838611_3.jar /home/bayarbayasgalan/csa313lab9/target/surefire 2026-11-10T18-28-38_402-jvmRun1 surefire-20261110182838611_1tmp surefire_0-20261110182838611_2tmp"/>
+    <property name="sun.java.command" value="/home/bayarbayasgalan/csa313lab9/target/surefire/surefirebooter-20261110184444227_3.jar /home/bayarbayasgalan/csa313lab9/target/surefire 2026-11-10T18-44-43_952-jvmRun1 surefire-20261110184444227_1tmp surefire_0-20261110184444227_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/bayarbayasgalan/csa313lab9/target/test-classes:/home/bayarbayasgalan/csa313lab9/target/classes:/home/bayarbayasgalan/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/bayarbayasgalan/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/bayarbayasgalan/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/bayarbayasgalan/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/bayarbayasgalan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/bayarbayasgalan/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/bayarbayasgalan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/bayarbayasgalan/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -26,7 +26,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/bayarbayasgalan/csa313lab9/target/surefire/surefirebooter-20261110182838611_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/bayarbayasgalan/csa313lab9/target/surefire/surefirebooter-20261110184444227_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.20.1+1-1-26.04-Ubuntu"/>
     <property name="user.name" value="bayarbayasgalan"/>
@@ -51,23 +51,23 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testGpa_Loop0_Empty" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.213"/>
-  <testcase name="testGpa_Loop2Plus" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.042"/>
-  <testcase name="testScholarship_Exception_GpaNegative" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.028"/>
-  <testcase name="testScholarship_0Percent" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.017"/>
-  <testcase name="testScholarship_Exception_GpaTooHigh" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.017"/>
-  <testcase name="testScholarship_100Percent_CreditFail" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.005"/>
-  <testcase name="testGpa_Loop1" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.015"/>
-  <testcase name="testScholarship_Violation" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.005"/>
-  <testcase name="testScholarship_50Percent" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.014"/>
+  <testcase name="testGpa_Loop0_Empty" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.134"/>
+  <testcase name="testGpa_Loop2Plus" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.014"/>
+  <testcase name="testScholarship_Exception_GpaNegative" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.003"/>
+  <testcase name="testScholarship_0Percent" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.002"/>
+  <testcase name="testScholarship_Exception_GpaTooHigh" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.002"/>
+  <testcase name="testScholarship_100Percent_CreditFail" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.004"/>
+  <testcase name="testGpa_Loop1" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.003"/>
+  <testcase name="testScholarship_Violation" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.004"/>
+  <testcase name="testScholarship_50Percent" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.004"/>
   <testcase name="testScholarship_100Percent" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.012"/>
-  <testcase name="testLetterGrade_Exception" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.058"/>
-  <testcase name="testScholarship_70Percent" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.005"/>
+  <testcase name="testLetterGrade_Exception" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.025"/>
+  <testcase name="testScholarship_70Percent" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.007"/>
   <testcase name="testGpa_Loop0_Null" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.005"/>
   <testcase name="testScholarship_70Percent_CreditFail" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.002"/>
-  <testcase name="testLetterGrade_A" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.004"/>
-  <testcase name="testLetterGrade_B" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.004"/>
-  <testcase name="testLetterGrade_C" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.003"/>
-  <testcase name="testLetterGrade_F" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.006"/>
-  <testcase name="testScholarship_Exception_CreditsNegative" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.005"/>
+  <testcase name="testLetterGrade_A" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.005"/>
+  <testcase name="testLetterGrade_B" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.001"/>
+  <testcase name="testLetterGrade_C" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.001"/>
+  <testcase name="testLetterGrade_F" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.003"/>
+  <testcase name="testScholarship_Exception_CreditsNegative" classname="mn.edu.must.sqat.ScholarshipCalculatorTest" time="0.004"/>
 </testsuite>
