@@ -1,4 +1,5 @@
 package mn.edu.must.sqat;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,6 +12,7 @@ public class ScholarshipCalculatorTest {
     @Test void testGradeD_Safe() { assertEquals("D", calc.letterGrade(65)); }
     @Test void testGradeF() { assertEquals("F", calc.letterGrade(50)); }
     @Test void testGradeEx() { assertThrows(IllegalArgumentException.class, () -> calc.letterGrade(-1)); }
+    @Test void testGradeEx_Over100() { assertThrows(IllegalArgumentException.class, () -> calc.letterGrade(101)); }
 
     @Test void testGpa_Loop0_Null() { assertThrows(IllegalArgumentException.class, () -> calc.gpa(null)); }
     @Test void testGpa_Loop0_Empty() { assertThrows(IllegalArgumentException.class, () -> calc.gpa(new double[]{})); }
@@ -21,14 +23,13 @@ public class ScholarshipCalculatorTest {
     @Test void testSchol_Ex2() { assertThrows(IllegalArgumentException.class, () -> calc.scholarship(5, 15, false)); }
     @Test void testSchol_Ex3() { assertThrows(IllegalArgumentException.class, () -> calc.scholarship(3.5, -1, false)); }
     @Test void testSchol_Viol() { assertEquals(0, calc.scholarship(4.0, 15, true)); }
-    
+
     @Test void testSchol_100() { assertEquals(100, calc.scholarship(3.9, 15, false)); }
     @Test void testSchol_100Fail() { assertEquals(70, calc.scholarship(3.9, 14, false)); }
     @Test void testSchol_70() { assertEquals(70, calc.scholarship(3.5, 12, false)); }
     @Test void testSchol_70Fail() { assertEquals(50, calc.scholarship(3.5, 11, false)); }
     @Test void testSchol_50() { assertEquals(50, calc.scholarship(3.0, 15, false)); }
     @Test void testSchol_0() { assertEquals(0, calc.scholarship(2.9, 15, false)); }
-    
- 
+
     @Test void testLetterGrade_D_Boundary() { assertEquals("D", calc.letterGrade(60)); }
 }
